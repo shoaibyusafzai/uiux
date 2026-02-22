@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHAIBI — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ANIMATED CANVAS BG -->
+  <canvas id="bgCanvas"></canvas>
+  <div class="noise-overlay"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-core" id="cursorCore"></div>
+
+  <!-- ═══════════════ NAV ═══════════════ -->
+  <nav class="nav" id="mainNav">
+    <a href="#hero" class="nav-brand">
+      <span class="brand-star">✦</span>SHAIBI
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="btn-glass" id="navHireBtn">Hire Me ✦</button>
+  </nav>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-badge glass-badge reveal">
+        <span class="pulse-dot"></span>
+        Available for freelance projects — 2026
+      </div>
+
+      <h1 class="hero-h1 reveal r-d1">
+        Designing<br />
+        <span class="italic-serif">invisible logic</span><br />
+        between human<br />
+        &amp; digital.
+      </h1>
+
+      <p class="hero-p reveal r-d2">
+        UI/UX Designer crafting interfaces that feel inevitable —<br />
+        where every pixel earns its place.
+      </p>
+
+      <div class="hero-cta reveal r-d3">
+        <button class="btn-primary" id="heroHireBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Let's Talk
+          <span class="btn-glow"></span>
+        </button>
+        <a href="#work" class="btn-text-arrow">
+          View Work
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal r-d4">
+        <div class="stat-glass">
+          <strong>15+</strong>
+          <span>Projects</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-glass">
+          <strong>3yr</strong>
+          <span>Experience</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-glass">
+          <strong>98%</strong>
+          <span>Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-orb orb-a"></div>
+      <div class="hero-orb orb-b"></div>
+      <div class="hero-orb orb-c"></div>
+      <div class="glass-card hero-card card-float">
+        <div class="hcard-avatar"></div>
+        <div class="hcard-text">
+          <strong>Shaibi</strong>
+          <span>UI/UX Designer</span>
+        </div>
+        <span class="hcard-dot"></span>
+      </div>
+      <div class="glass-card hero-mini-card card-float-slow">
+        <span class="mini-emoji">🎨</span>
+        <span>Design System ready</span>
+      </div>
+      <div class="glass-card hero-micro-card card-float-rev">
+        <span class="micro-icon">⚡</span>
+        <span>Fast Delivery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-outer">
+    <div class="marquee-inner">
+      <span>UI Design</span><em>✦</em>
+      <span>UX Research</span><em>✦</em>
+      <span>Prototyping</span><em>✦</em>
+      <span>Design Systems</span><em>✦</em>
+      <span>Product Strategy</span><em>✦</em>
+      <span>Branding</span><em>✦</em>
+      <span>Interaction Design</span><em>✦</em>
+      <span>UI Design</span><em>✦</em>
+      <span>UX Research</span><em>✦</em>
+      <span>Prototyping</span><em>✦</em>
+      <span>Design Systems</span><em>✦</em>
+      <span>Motion Design</span><em>✦</em>
+      <span>Product Strategy</span><em>✦</em>
+      <span>Branding</span><em>✦</em>
+      <span>Interaction Design</span><em>✦</em>
+    </div>
+  </div>
+
+  <!-- ═══════════════ ABOUT ═══════════════ -->
+  <section class="about section" id="about">
+    <div class="about-grid">
+
+      <div class="about-left">
+        <div class="glass-card avatar-card reveal">
+          <div class="avatar-visual">
+            <div class="av-orb av-b"></div>
+            <div class="av-initials"><img src="image.jpg" alt="" width="330" height="330"></div>
+          </div>
+        </div>
+        <div class="glass-card floating-badge reveal r-d1">
+          <span>🎨</span>
+          <div class="fb-text">
+            <strong>Currently designing</strong>
+            <small>@ Xpert Spot </small>
+          </div>
+        </div>
+        <div class="glass-card tool-badge reveal r-d2">
+          Figma Expert &nbsp;·&nbsp; Framer Pro
+        </div>
+      </div>
+
+      <div class="about-right">
+        <span class="section-label reveal">/ About Me</span>
+        <h2 class="reveal r-d1">I turn messy<br /><em>complexity</em><br />into joyful clarity.</h2>
+        <p class="reveal r-d2">I'm Aria — a product designer obsessed with the space where beauty meets function. I believe the best interfaces are the ones users don't have to think about.</p>
+        <p class="reveal r-d3">From fintech dashboards to consumer apps, I partner with founders and teams to design products that aren't just usable — but genuinely loved.</p>
+        <div class="skill-cloud reveal r-d4">
+          <span class="chip">Figma</span>
+          <span class="chip">Adobe Photoshop</span>
+          <span class="chip">Adobe Illustrator</span>
+          <span class="chip">UX Research</span>
+          <span class="chip">Prototyping</span>
+          <span class="chip">Design Systems</span>
+          <span class="chip">Adobe Xd</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════ WORK ═══════════════ -->
+  <section class="work section" id="work">
+    <div class="section-head">
+      <span class="section-label reveal">/ Selected Projects</span>
+      <h2 class="reveal r-d1">Work that<br /><em>moves</em> people.</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <article class="pcard glass-card reveal" data-glow="#c084fc">
+        <div class="pcard-visual g1">
+          <div class="pcard-ui">
+            <div class="pui-bar"></div>
+            <div class="pui-block big"></div>
+            <div class="pui-row">
+              <div class="pui-block sm"></div>
+              <div class="pui-block sm accent-block"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags">
+            <span>Mobile App</span><span>iOS</span>
+          </div>
+          <h3>Luminary — Wellness App</h3>
+          <p>Rebuilt onboarding from scratch. Drop-off reduced by 71%. Calm, breathing-inspired visual system.</p>
+          <div class="pcard-foot">
+            <span>Figma · UX Research · Motion</span>
+            <span class="parrow">↗</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard glass-card reveal r-d1" data-glow="#34d399">
+        <div class="pcard-visual g2">
+          <div class="pcard-ui">
+            <div class="pui-bar"></div>
+            <div class="pui-row">
+              <div class="pui-block wide"></div>
+            </div>
+            <div class="pui-block med"></div>
+            <div class="pui-block sm"></div>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags">
+            <span>SaaS</span><span>Dashboard</span>
+          </div>
+          <h3>Axis — Analytics Platform</h3>
+          <p>140+ component design system. Complex data made beautiful and accessible for 50k+ users.</p>
+          <div class="pcard-foot">
+            <span>Figma · Design System · A11y</span>
+            <span class="parrow">↗</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard glass-card reveal r-d2" data-glow="#f472b6">
+        <div class="pcard-visual g3">
+          <div class="pcard-ui">
+            <div class="pui-bar"></div>
+            <div class="pui-block big"></div>
+            <div class="pui-block med accent-block"></div>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags">
+            <span>E-Commerce</span><span>Branding</span>
+          </div>
+          <h3>Sérafine — Luxury Fashion</h3>
+          <p>End-to-end brand identity & digital experience for a Paris-born luxury label. 3.1× conversion lift.</p>
+          <div class="pcard-foot">
+            <span>Figma · Framer · Brand Strategy</span>
+            <span class="parrow">↗</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="pcard glass-card reveal r-d3" data-glow="#fbbf24">
+        <div class="pcard-visual g4">
+          <div class="pcard-ui">
+            <div class="pui-bar"></div>
+            <div class="pui-row">
+              <div class="pui-block sm"></div>
+              <div class="pui-block sm"></div>
+              <div class="pui-block sm accent-block"></div>
+            </div>
+            <div class="pui-block sm"></div>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="pcard-tags">
+            <span>Fintech</span><span>Web App</span>
+          </div>
+          <h3>Vault — Finance Dashboard</h3>
+          <p>Legacy banking reborn. Modern, trust-building UX. Task completion improved by 58%.</p>
+          <div class="pcard-foot">
+            <span>Figma · Webflow · UX Audit</span>
+            <span class="parrow">↗</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════ PROCESS ═══════════════ -->
+  <section class="process section" id="process">
+    <div class="section-head center">
+      <span class="section-label reveal">/ My Process</span>
+      <h2 class="reveal r-d1">How great design<br /><em>actually</em> happens.</h2>
+    </div>
+    <div class="process-row">
+      <div class="process-step glass-card reveal">
+        <div class="pstep-num">01</div>
+        <h4>Discover</h4>
+        <p>Deep research, user interviews, competitive analysis. I learn your world before putting pen to paper.</p>
+      </div>
+      <div class="pstep-arrow reveal r-d1">→</div>
+      <div class="process-step glass-card reveal r-d1">
+        <div class="pstep-num">02</div>
+        <h4>Define</h4>
+        <p>Synthesize findings into a crisp problem statement. Clarity here makes everything downstream flow.</p>
+      </div>
+      <div class="pstep-arrow reveal r-d2">→</div>
+      <div class="process-step glass-card reveal r-d2">
+        <div class="pstep-num">03</div>
+        <h4>Design</h4>
+        <p>From lo-fi wireframes to pixel-perfect interactive prototypes. Iterate fast, test faster.</p>
+      </div>
+      <div class="pstep-arrow reveal r-d3">→</div>
+      <div class="process-step glass-card reveal r-d3">
+        <div class="pstep-num">04</div>
+        <h4>Deliver</h4>
+        <p>Handoff-ready specs, component libraries, motion docs. Everything your team needs to build it right.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT ═══════════════ -->
+  <section class="contact section" id="contact">
+    <div class="contact-card glass-card reveal">
+      <div class="ccard-glow"></div>
+      <span class="section-label">/ Let's Work Together</span>
+      <h2>Got a vision?<br />Let's make it <em>real.</em></h2>
+      <p>Open to freelance, consulting &amp; full-time roles. I respond within 24 hours.</p>
+      <button class="btn-primary large" id="contactHireBtn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Message me on WhatsApp
+        <span class="btn-glow"></span>
+      </button>
+      <p class="c-hint">Click above · I reply fast ✦</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <span class="f-brand">✦ SHAIBI UI/UX</span>
+    <span class="f-copy">© 2026 — Crafted with intention &amp; obsession.</span>
+    <a href="#hero" class="f-top">Back to top ↑</a>
+  </footer>
+
+  <!-- ═══════════════ WHATSAPP POPUP ═══════════════ -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-card glass-card" id="popupCard">
+      <button class="popup-close" id="popupClose">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="popup-glow"></div>
+
+      <div class="popup-wa-bubble">
+        <svg viewBox="0 0 32 32" fill="white"><path d="M16.003 2.667C8.638 2.667 2.67 8.634 2.67 16c0 2.344.63 4.64 1.83 6.664L2.004 29.333l6.88-1.803A13.26 13.26 0 0016.003 29.333C23.368 29.333 29.337 23.366 29.337 16S23.368 2.667 16.003 2.667zm0 24a10.6 10.6 0 01-5.477-1.534l-.39-.233-4.054 1.063.083-.317 1.01-3.896-.258-.405A10.6 10.6 0 015.337 16c0-5.883 4.784-10.667 10.666-10.667S26.67 10.117 26.67 16 21.886 26.667 16.003 26.667zm5.833-7.977c-.32-.16-1.892-.934-2.185-1.04-.292-.106-.504-.16-.717.16-.212.32-.824 1.04-1.01 1.254-.187.213-.373.24-.692.08-.32-.16-1.354-.5-2.578-1.593-.953-.85-1.596-1.898-1.782-2.218-.187-.32-.02-.493.14-.652.144-.144.32-.374.48-.56.16-.187.213-.32.32-.534.106-.213.053-.4-.027-.56-.08-.16-.717-1.733-.983-2.374-.26-.621-.52-.535-.717-.545l-.61-.01c-.213 0-.56.08-.854.4-.292.32-1.12 1.094-1.12 2.667s1.147 3.093 1.307 3.307c.16.213 2.258 3.454 5.47 4.846.764.33 1.36.527 1.825.674.769.243 1.468.209 2.02.127.616-.091 1.892-.773 2.158-1.52.267-.746.267-1.386.187-1.52-.08-.133-.293-.213-.61-.373z"/></svg>
+      </div>
+
+      <span class="glass-badge popup-badge">Ready to Start ✦</span>
+      <h3 class="popup-h3">Let's Build Something<br /><em>Amazing Together</em></h3>
+      <p class="popup-p">Hey there! 👋 I'm excited to hear about your project. Tap below and let's chat on WhatsApp — quick, personal, and friendly.</p>
+
+      <a
+        class="btn-wa"
+        href="https://wa.me/923298600339?text=Hi!%20I%20saw%20your%20portfolio%20and%20I'm%20ready%20to%20start%20a%20project%20%F0%9F%9A%80"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="white"><path d="M16.003 2.667C8.638 2.667 2.67 8.634 2.67 16c0 2.344.63 4.64 1.83 6.664L2.004 29.333l6.88-1.803A13.26 13.26 0 0016.003 29.333C23.368 29.333 29.337 23.366 29.337 16S23.368 2.667 16.003 2.667zm0 24a10.6 10.6 0 01-5.477-1.534l-.39-.233-4.054 1.063.083-.317 1.01-3.896-.258-.405A10.6 10.6 0 015.337 16c0-5.883 4.784-10.667 10.666-10.667S26.67 10.117 26.67 16 21.886 26.667 16.003 26.667zm5.833-7.977c-.32-.16-1.892-.934-2.185-1.04-.292-.106-.504-.16-.717.16-.212.32-.824 1.04-1.01 1.254-.187.213-.373.24-.692.08-.32-.16-1.354-.5-2.578-1.593-.953-.85-1.596-1.898-1.782-2.218-.187-.32-.02-.493.14-.652.144-.144.32-.374.48-.56.16-.187.213-.32.32-.534.106-.213.053-.4-.027-.56-.08-.16-.717-1.733-.983-2.374-.26-.621-.52-.535-.717-.545l-.61-.01c-.213 0-.56.08-.854.4-.292.32-1.12 1.094-1.12 2.667s1.147 3.093 1.307 3.307c.16.213 2.258 3.454 5.47 4.846.764.33 1.36.527 1.825.674.769.243 1.468.209 2.02.127.616-.091 1.892-.773 2.158-1.52.267-.746.267-1.386.187-1.52-.08-.133-.293-.213-.61-.373z"/></svg>
+        Open WhatsApp — Let's Talk
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
